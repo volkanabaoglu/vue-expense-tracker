@@ -6,7 +6,7 @@
     <TransactionList />
     <AddTransaction />
   </div>
-</template>
+</template> 
 
 <script>
   import Header from './components/Header.vue';
