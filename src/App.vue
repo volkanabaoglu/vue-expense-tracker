@@ -1,0 +1,3 @@
+<template>
+  my app
+</template>
