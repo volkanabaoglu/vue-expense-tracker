@@ -6,7 +6,7 @@
         </li>
 
         <li class="plus">
-            Paycheck <span>-400 TL</span><button class="delete-btn">x</button>
+            Paycheck <span>+400 TL</span><button class="delete-btn">x</button>
         </li>
     </ul>
 </template>
