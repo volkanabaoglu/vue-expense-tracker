@@ -8,18 +8,3 @@
         </li>
     </ul>
 </template>
-
-<script>
-export default {
-    data() {
-        return {
-            transactions: [
-                { id: 1, text: 'Koltuk', amount: -20 },
-                { id: 2, text: 'Monitör', amount: 300 },
-                { id: 3, text: 'Masa', amount: -10 },
-                { id: 4, text: 'Arduino UNO Set', amount: 150 }
-            ],
-        }
-    },
-}
-</script>
