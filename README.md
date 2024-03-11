@@ -1,6 +1,6 @@
-#Vue 3 Expense Tracker
+<h1>Vue 3 Expense Tracker</h1>
 
-An expense tracker app built with Vue 3 and the composition API.<br><br>
+<h3>An expense tracker app built with Vue 3 and the composition API.</h3><br><br>
 
 -Add and remove expenses/income <br><br>
 -Track balance <br><br>
