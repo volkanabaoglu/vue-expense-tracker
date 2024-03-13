@@ -9,6 +9,11 @@
 </template>
 
 <script>
-import store from '@/store';
-const transactionList = store.getters.getTransactions;
+export default {
+    computed: {
+        transactionList() {
+            return this.$store.getters.getTransactions;
+        }
+    }
+}
 </script>

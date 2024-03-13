@@ -10,23 +10,17 @@ const store = new Vuex.Store({
     transactions: [],
   },
   mutations: {
-    // update states
     setTransactions(state, transactions) {
       state.transactions = transactions;
     },
   },
   getters: {
-    // return states
     getTransactions(state) {
       return state.transactions;
     },
   },
-  actions: {
-    // async - api calls
-  },
-  modules: {
-    // return states
-  },
+  actions: {},
+  modules: {},
 });
 
 export default store;

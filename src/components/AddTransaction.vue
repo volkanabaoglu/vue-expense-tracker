@@ -32,10 +32,8 @@ export default {
                 text: this.text,
                 amount: parseFloat(this.amount),
             };
-            console.log('test');
             this.$store.commit("setTransactions", [...store.getters.getTransactions, newTransaction]);
-
-       
+            
             this.text = "";
             this.amount = 0;
         },
