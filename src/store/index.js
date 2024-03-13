@@ -1,26 +1,32 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import { createApp } from "vue";
+import Vuex from "vuex";
 
-Vue.use(Vuex);
+const app = createApp();
 
-export default new Vuex.Store({
-    state: {
-        // entities
-        transactions: [],
+app.use(Vuex);
+
+const store = new Vuex.Store({
+  state: {
+    transactions: [],
+  },
+  mutations: {
+    // update states
+    setTransactions(state, transactions) {
+      state.transactions = transactions;
     },
-    mutations: {
-        // update states
-        setTransactions(state, transactions) {
-            state.transactions = transactions;
-        },
-        getTransactions(state) {
-            return state.transactions;
-        }
+  },
+  getters: {
+    // return states
+    getTransactions(state) {
+      return state.transactions;
     },
-    actions: {
-        // async - api calls
-    },
-    modules: {
-        // return states
-    }
+  },
+  actions: {
+    // async - api calls
+  },
+  modules: {
+    // return states
+  },
 });
+
+export default store;

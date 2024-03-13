@@ -1,14 +1,14 @@
 <template>
     <h3>History</h3>
     <ul id="list" class="list">
-
-        <li v-for="transaction in transactions" :key="transaction.id"
+        <li v-for="transaction in transactionList" :key="transaction.id"
             :class="transaction.amount < 0 ? 'minus' : 'plus'">
             {{ transaction.text }} <span>{{ transaction.amount }} TL</span><button class="delete-btn">x</button>
         </li>
     </ul>
 </template>
 
-<script setup>
-    import { defineProps  } from 'vue';
+<script>
+import store from '@/store';
+const transactionList = store.getters.getTransactions;
 </script>
